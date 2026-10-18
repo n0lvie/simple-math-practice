@@ -1,7 +1,7 @@
 from math import *
 import random as R, re
 
-M = 0  # 0 — base, 1 — the whole math
+M = int(input('Mode (0/1): ') == '1')  # 0 — base, 1 — the whole math
 C, Z = R.choice, R.randint
 I = lambda f: lambda *a: 1. * f(*map(int, a))
 G = lambda x: gamma(x*(x>0))
